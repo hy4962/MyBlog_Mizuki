@@ -26,7 +26,7 @@ const SITE_TIMEZONE = 8; //设置你的网站时区 from -12 to 12 default in UT
 export const siteConfig: SiteConfig = {
 	title: "HY-blog",
 	subtitle: "一个博客",
-	siteURL: "https://blog.1166688.xyz/", // 请替换为你的站点URL，以斜杠结尾
+	siteURL: "https://blog.547466.xyz/", // 请替换为你的站点URL，以斜杠结尾
 	siteStartDate: "2025-03-25", // 站点开始运行日期，用于站点统计组件计算运行天数
 
 	timeZone: SITE_TIMEZONE,
@@ -125,6 +125,8 @@ export const siteConfig: SiteConfig = {
 		// 支持单张图片或图片数组，当数组长度 > 1 时自动启用轮播
 		src: {
 			desktop: [
+				"/assets/desktop-banner/kirino.webp",
+				"/assets/desktop-banner/three.webp",
 				"/assets/desktop-banner/1.webp",
 				"/assets/desktop-banner/2.webp",
 				"/assets/desktop-banner/3.webp",
@@ -162,7 +164,7 @@ export const siteConfig: SiteConfig = {
 
 		homeText: {
 			enable: true, // 在主页显示自定义文本
-			title: "わたしの部屋", // 主页横幅主标题
+			title: "HY-Blog", // 主页横幅主标题
 
 			subtitle: [
 				"特別なことはないけど、君がいると十分です",
@@ -368,7 +370,7 @@ export const navBarConfig: NavBarConfig = {
 };
 
 export const profileConfig: ProfileConfig = {
-	avatar: "assets/images/avatar.webp", // 相对于 /src 目录。如果以 '/' 开头，则相对于 /public 目录
+	avatar: "assets/images/xiaoyuan.avif", // 相对于 /src 目录。如果以 '/' 开头，则相对于 /public 目录
 	name: "鹤渊",
 	bio: "写来自己看的...",
 	typewriter: {
