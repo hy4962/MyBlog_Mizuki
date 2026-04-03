@@ -370,7 +370,7 @@ export const navBarConfig: NavBarConfig = {
 };
 
 export const profileConfig: ProfileConfig = {
-	avatar: "assets/images/xiaoyuan.avif", // 相对于 /src 目录。如果以 '/' 开头，则相对于 /public 目录
+	avatar: "assets/images/yanyuan.jpg", // 相对于 /src 目录。如果以 '/' 开头，则相对于 /public 目录
 	name: "鹤渊",
 	bio: "写来自己看的...",
 	typewriter: {
@@ -491,7 +491,7 @@ export const musicPlayerConfig: MusicPlayerConfig = {
 	enable: true, // 启用音乐播放器功能
 	showFloatingPlayer: true, // 显示悬浮播放器 UI
 	floatingEntryMode: "fab", // 悬浮入口模式："default" 为独立悬浮播放器，"fab" 为集成到通用 FAB 组
-	mode: "meting", // 音乐播放器模式，可选 "local" 或 "meting"
+	mode: "local", // 音乐播放器模式，可选 "local" 或 "meting"
 	meting_api:
 		"https://meting.mysqil.com/api?server=:server&type=:type&id=:id&auth=:auth&r=:r", // Meting API 地址
 	id: "17457027883", // 歌单ID
