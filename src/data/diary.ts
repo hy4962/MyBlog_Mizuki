@@ -23,9 +23,8 @@ const diaryData: DiaryItem[] = [
 	{
 		id: 2,
 		content:
-			"面向对象吗，传参有点乱啊，感觉不习惯之前还是觉得函数式方便...",
+			"面向对象吗，传参有点乱啊，感觉不习惯面向对象之前还是觉得函数式方便...",
 		date: "2026-04-07T16:30:00Z",
-		images: ["/images/diary/sakura.jpg", "/images/diary/1.webp"],
 	},
 ];
 

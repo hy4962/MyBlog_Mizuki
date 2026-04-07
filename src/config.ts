@@ -26,8 +26,8 @@ const SITE_TIMEZONE = 8; //设置你的网站时区 from -12 to 12 default in UT
 export const siteConfig: SiteConfig = {
 	title: "HY-blog",
 	subtitle: "一个博客",
-	siteURL: "https://blog.547466.xyz/", // 请替换为你的站点URL，以斜杠结尾
-	siteStartDate: "2025-03-25", // 站点开始运行日期，用于站点统计组件计算运行天数
+	siteURL: "https://9ll.uk/", // 请替换为你的站点URL，以斜杠结尾
+	siteStartDate: "2026-03-25", // 站点开始运行日期，用于站点统计组件计算运行天数
 
 	timeZone: SITE_TIMEZONE,
 
