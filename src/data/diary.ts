@@ -20,6 +20,13 @@ const diaryData: DiaryItem[] = [
 		date: "2025-01-15T10:30:00Z",
 		images: ["/images/diary/sakura.jpg", "/images/diary/1.webp"],
 	},
+	{
+		id: 2,
+		content:
+			"面向对象吗，传参有点乱啊，感觉不习惯之前还是觉得函数式方便...",
+		date: "2026-04-07T16:30:00Z",
+		images: ["/images/diary/sakura.jpg", "/images/diary/1.webp"],
+	},
 ];
 
 // 获取日记列表（按时间倒序）
