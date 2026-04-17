@@ -40,7 +40,7 @@ export default defineConfig({
 
 	integrations: [
 		umami({
-			shareUrl: false,
+			shareUrl: "http://umami.1166688.xyz:3000/share/0JhoVKbzpHc9swPp",
 		}),
 		swup({
 			theme: false,
