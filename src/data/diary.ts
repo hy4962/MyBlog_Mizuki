@@ -83,6 +83,26 @@ const diaryData: DiaryItem[] = [
 
 ];
 
+// 将UTC日期字符串转换为本地时间（+8小时）的显示格式
+// 保持原date字段不变，此函数仅用于展示
+export const getLocalTimeString = (utcDateString: string): string => {
+	const utcDate = new Date(utcDateString);
+	// 创建UTC+8时间的新日期对象（不修改原字符串）
+	const localDate = new Date(utcDate.getTime() + 8 * 60 * 60 * 1000);
+	
+	// 格式化为本地日期时间字符串，可根据需求调整格式
+	return localDate.toLocaleString('zh-CN', {
+		year: 'numeric',
+		month: '2-digit',
+		day: '2-digit',
+		hour: '2-digit',
+		minute: '2-digit',
+		second: '2-digit',
+		hour12: false,
+		timeZone: 'Asia/Shanghai' // 明确指定东八区
+	});
+};
+
 // 获取日记列表（按时间倒序）
 export const getDiaryList = (limit?: number) => {
 	const sortedData = [...diaryData].sort(
@@ -105,4 +125,14 @@ export const getAllTags = () => {
 		}
 	});
 	return Array.from(tags).sort();
+};
+
+// 辅助函数：获取带本地时间显示的日记列表（原UTC格式不变，附加显示字段）
+export const getDiaryListWithLocalTime = (limit?: number) => {
+	const diaryList = getDiaryList(limit);
+	return diaryList.map(item => ({
+		...item,
+		// 添加一个用于展示的本地时间字段，原始date字段保持不变
+		localTime: getLocalTimeString(item.date)
+	}));
 };
